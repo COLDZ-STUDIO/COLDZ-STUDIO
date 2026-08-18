@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COLDZ Studio | Visual & Video Design</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">COLDZ <span>STUDIO</span></a>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact" class="btn btn-red-sm">Contact Us</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content fade-in">
+      <span class="badge">Professional Creative Services</span>
+      <h1>COLDZ Studio</h1>
+      <p class="tagline">Thumbnail Designer <span class="dot">•</span> Logo Designer <span class="dot">•</span> Video Editor</p>
+      <p class="hero-subtext">Elevating brands, creators, and channels with high-converting visual assets and high-retention video content.</p>
+      <div class="hero-buttons">
+        <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+        <a href="#contact" class="btn btn-red">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section-padding">
+    <div class="container fade-in">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">About <span>COLDZ Studio</span></h2>
+          <p>We are a dedicated digital creative studio specializing in visual identity and high-performance video editing. Whether you're a YouTube creator looking to boost your Click-Through Rate (CTR) or a business building an unforgettable visual brand, COLDZ Studio brings your vision to life.</p>
+          <p>Driven by industry-leading design strategies, we combine clean aesthetics, strong typography, and psychological color choices to ensure your content stands out in a crowded digital space.</p>
+          <div class="stats-row">
+            <div class="stat-card">
+              <h3>100+</h3>
+              <p>Projects Done</p>
+            </div>
+            <div class="stat-card">
+              <h3>99%</h3>
+              <p>Client Satisfaction</p>
+            </div>
+            <div class="stat-card">
+              <h3>24/7</h3>
+              <p>Fast Support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio section-padding">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Featured <span>Work</span></h2>
+        <p class="section-subtitle">Explore selected visual design and branding projects.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="portfolio-tabs fade-in">
+        <button class="tab-btn active" data-filter="all">All Work</button>
+        <button class="tab-btn" data-filter="designs">Designs</button>
+        <button class="tab-btn" data-filter="video">Video Editing</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid">
+        
+        <!-- Design Items -->
+        <div class="portfolio-card fade-in" data-category="designs">
+          <div class="card-image">
+            <img src="images/podcast.jpg" alt="Indian Talks Podcast" />
+          </div>
+          <div class="card-content">
+            <h3>Indian Talks Podcast</h3>
+            <p>Atmospheric podcast setup design with warm aesthetic lighting.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card fade-in" data-category="designs">
+          <div class="card-image">
+            <img src="images/minecraft thumblain.png" alt="Minecraft Visual" />
+          </div>
+          <div class="card-content">
+            <h3>Minecraft Gaming Artwork</h3>
+            <p>High contrast gaming visual created for maximum reach.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card fade-in" data-category="designs">
+          <div class="card-image">
+            <img src="images/animedp.png" alt="Anime DP Artwork" />
+          </div>
+          <div class="card-content">
+            <h3>Anime Avatar Artwork</h3>
+            <p>Custom stylized character design for social profiles.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card fade-in" data-category="designs">
+          <div class="card-image">
+            <img src="images/fflogo.png" alt="Esports Gaming Design" />
+          </div>
+          <div class="card-content">
+            <h3>Esports Gaming Emblem</h3>
+            <p>Vector branding created for competitive gaming profiles.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card fade-in" data-category="designs">
+          <div class="card-image">
+            <img src="images/TEAM LIONS.png" alt="Team Lions Design" />
+          </div>
+          <div class="card-content">
+            <h3>Team Lions Mascot Design</h3>
+            <p>Dynamic competitive team branding and graphic setup.</p>
+          </div>
+        </div>
+
+        <!-- Video Editing Coming Soon Card -->
+        <div class="portfolio-card fade-in" data-category="video" style="grid-column: 1 / -1;">
+          <div class="card-content" style="text-align: center; padding: 60px 20px; background: var(--bg-light); border-radius: var(--radius);">
+            <h3 style="font-size: 1.8rem; color: var(--primary-blue); margin-bottom: 10px;">Video Editing Showcase</h3>
+            <p style="font-size: 1.1rem; color: var(--red-accent); font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Coming Soon</p>
+            <p style="color: var(--text-muted); max-width: 500px; margin: 10px auto 0 auto;">We are currently finalizing video showreels and client edits. Contact us directly to view sample edits!</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing section-padding">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Transparent <span>Pricing</span></h2>
+        <p class="section-subtitle">Affordable rates crafted for creators and expanding businesses.</p>
+      </div>
+
+      <div class="pricing-grid">
+        
+        <!-- Thumbnail Pricing -->
+        <div class="price-card fade-in">
+          <div class="price-header">
+            <h3>Thumbnail Design</h3>
+            <div class="price"><span>Starting from</span> ₹150</div>
+          </div>
+          <ul class="price-features">
+            <li>High Click-Through Rate (CTR) Focus</li>
+            <li>Full HD 1080p Resolution</li>
+            <li>Source File Included</li>
+            <li>Unlimited Minor Revisions</li>
+            <li>24-48 Hour Delivery</li>
+          </ul>
+          <a href="#contact" class="btn btn-red w-100">Order Thumbnail</a>
+        </div>
+
+        <!-- Logo Pricing (Popular Choice) -->
+        <div class="price-card popular fade-in">
+          <div class="popular-badge">Most Popular</div>
+          <div class="price-header">
+            <h3>Logo Design</h3>
+            <div class="price"><span>Starting from</span> ₹300</div>
+          </div>
+          <ul class="price-features">
+            <li>Custom Vector Concept</li>
+            <li>High-Res PNG, JPG & Vector Files</li>
+            <li>Transparent Backgrounds</li>
+            <li>Brand Color Palette Recommendations</li>
+            <li>Full Commercial Rights</li>
+          </ul>
+          <a href="#contact" class="btn btn-red w-100">Order Logo</a>
+        </div>
+
+        <!-- Video Editing Pricing -->
+        <div class="price-card fade-in">
+          <div class="price-header">
+            <h3>Video Editing</h3>
+            <div class="price"><span>Starting from</span> ₹350</div>
+          </div>
+          <ul class="price-features">
+            <li>Fast Pacing & Dynamic Cuts</li>
+            <li>Engaging Subtitles & Captions</li>
+            <li>Sound Effects & Background Music</li>
+            <li>Color Correction & Grading</li>
+            <li>Optimized for YouTube / Reels</li>
+          </ul>
+          <a href="#contact" class="btn btn-red w-100">Order Video Edit</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section-padding">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Let's Work <span>Together</span></h2>
+        <p class="section-subtitle">Ready to level up your content? Send a message or reach out on social media.</p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Quick Social Action Buttons -->
+        <div class="contact-info fade-in">
+          <h3>Get in Touch Directly</h3>
+          <p>We usually respond within a few hours. Pick your preferred contact method below:</p>
+          
+          <div class="contact-buttons">
+            <a href="mailto:coldzstudio@gmail.com" class="contact-btn email-btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              Send Email
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="contact-btn instagram-btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              Instagram DM
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form Connected to Web3Forms -->
+        <div class="contact-form-wrapper fade-in">
+          <form id="contactForm" class="contact-form">
+            <!-- PASTE YOUR WEB3FORMS ACCESS KEY IN VALUE BELOW -->
+            <input type="hidden" name="access_key" value="YOUR_ACTUAL_ACCESS_KEY_HERE" />
+
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" name="name" id="name" required placeholder="John Doe" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" name="email" id="email" required placeholder="john@example.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Required</label>
+              <select name="service" id="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="Thumbnail Design">Thumbnail Design</option>
+                <option value="Logo Design">Logo Design</option>
+                <option value="Video Editing">Video Editing</option>
+                <option value="Custom Package">Multiple / Custom Package</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Project Details</label>
+              <textarea name="message" id="message" rows="4" required placeholder="Briefly describe what you're looking for..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-red w-100">Send Message</button>
+            <p id="formStatus" class="form-status"></p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#" class="logo">COLDZ <span>STUDIO</span></a>
+        <p>Premium Thumbnail Design, Logo Design, & High-Retention Video Editing.</p>
+      </div>
+      <p class="copyright">&copy; 2026 COLDZ Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
