@@ -4,7 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>COLDZ Studio | Visual & Video Design</title>
+  
+  <!-- Browser Tab Logo / Favicon -->
   <link rel="icon" type="image/png" href="images/logo.png" />
+
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -141,12 +144,31 @@
           </div>
         </div>
 
-        <!-- Video Editing Coming Soon Card -->
+        <!-- Video Editing Showcase with Cloudinary Stream -->
         <div class="portfolio-card fade-in" data-category="video" style="grid-column: 1 / -1;">
-          <div class="card-content" style="text-align: center; padding: 60px 20px; background: var(--bg-light); border-radius: var(--radius);">
-            <h3 style="font-size: 1.8rem; color: var(--primary-blue); margin-bottom: 10px;">Video Editing Showcase</h3>
-            <p style="font-size: 1.1rem; color: var(--red-accent); font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Coming Soon</p>
-            <p style="color: var(--text-muted); max-width: 500px; margin: 10px auto 0 auto;">We are currently finalizing video showreels and client edits. Contact us directly to view sample edits!</p>
+          <div class="card-video-wrapper" style="max-width: 800px; margin: 0 auto; background: var(--bg-light); padding: 20px; border-radius: var(--radius); text-align: center;">
+            
+            <!-- Video Player using Cloudinary Direct URL -->
+            <video controls autoplay muted loop style="width: 100%; border-radius: 8px; max-height: 500px; object-fit: contain;">
+              <source src="https://res.cloudinary.com/urz4bfdk/video/upload/v1787131345/showreel.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <!-- Instagram Call to Action -->
+            <div style="margin-top: 20px;">
+              <p style="font-size: 1.1rem; color: var(--text-light); margin-bottom: 12px; font-weight: 500;">
+                For more edits, check out my Instagram!
+              </p>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn btn-red" style="display: inline-flex; align-items: center; gap: 8px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                Visit Instagram
+              </a>
+            </div>
+
           </div>
         </div>
 
@@ -168,7 +190,7 @@
         <div class="price-card fade-in">
           <div class="price-header">
             <h3>Thumbnail Design</h3>
-            <div class="price"><span>Starting from</span> ₹150</div>
+            <div class="price"><span>Starting from</span> ₹149</div>
           </div>
           <ul class="price-features">
             <li>High Click-Through Rate (CTR) Focus</li>
@@ -180,12 +202,12 @@
           <a href="#contact" class="btn btn-red w-100">Order Thumbnail</a>
         </div>
 
-        <!-- Logo Pricing (Popular Choice) -->
+        <!-- Logo Pricing -->
         <div class="price-card popular fade-in">
           <div class="popular-badge">Most Popular</div>
           <div class="price-header">
             <h3>Logo Design</h3>
-            <div class="price"><span>Starting from</span> ₹300</div>
+            <div class="price"><span>Starting from</span> ₹299</div>
           </div>
           <ul class="price-features">
             <li>Custom Vector Concept</li>
@@ -201,7 +223,7 @@
         <div class="price-card fade-in">
           <div class="price-header">
             <h3>Video Editing</h3>
-            <div class="price"><span>Starting from</span> ₹350</div>
+            <div class="price"><span>Starting from</span> ₹349</div>
           </div>
           <ul class="price-features">
             <li>Fast Pacing & Dynamic Cuts</li>
@@ -248,7 +270,7 @@
         <div class="contact-form-wrapper fade-in">
           <form id="contactForm" class="contact-form">
             <!-- PASTE YOUR WEB3FORMS ACCESS KEY IN VALUE BELOW -->
-            <input type="hidden" name="access_key" value="YOUR_ACTUAL_ACCESS_KEY_HERE" />
+            <input type="hidden" name="access_key" value="18643219-7993-4c41-bfdb-b89b18f1b3b8" />
 
             <div class="form-group">
               <label for="name">Your Name</label>
